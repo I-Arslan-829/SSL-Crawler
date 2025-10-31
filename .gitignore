@@ -1,0 +1,8 @@
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore specific log and CSV files
+domain_errors_log.log
+domains.csv
+extracted_domains-1.csv
+extracted_domains.csv
