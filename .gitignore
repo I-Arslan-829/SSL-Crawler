@@ -6,3 +6,4 @@ domain_errors_log.log
 domains.csv
 extracted_domains-1.csv
 extracted_domains.csv
+domain_errors_multi.log
