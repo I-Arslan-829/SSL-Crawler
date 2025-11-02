@@ -12,7 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ---------------- MongoDB Setup ----------------
 URL = "mongodb://localhost:27017"
-DB_NAME = "Trunco_data_Multi"
+DB_NAME = "Tranco_data_Multi"
 client = MongoClient(URL, serverSelectionTimeoutMS=5000)
 db = client[DB_NAME]
 collection = db["certificates"]
@@ -40,7 +40,6 @@ def check_mongo_connection():
         return True
     except ServerSelectionTimeoutError:
         return False
-
 
 def load_domains_from_csv(file_path):
     domain_list = []
@@ -155,6 +154,11 @@ def main():
                 print(f"Error in thread: {e}")
             if i % 100 == 0:
                 print(f"Processed {i}/{total_domains} domains...")
+                t_now=time.time()
+                total_time1 = t_now - start_time
+
+                print(f"\nTotal execution time: {total_time1:.2f} seconds")
+
 
     # ---------- End of multithreading section ----------
 

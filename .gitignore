@@ -7,3 +7,12 @@ domains.csv
 extracted_domains-1.csv
 extracted_domains.csv
 domain_errors_multi.log
+.gitignore
+pk_urls.log
+pk_urls_failures.txt
+merged_pk_urls.log
+merged_pk_urls_failures.txt
+Cloudflare_urls_failures.txt
+Cloudflare_urls.log
+completed.txt
+Crawler_multi_T_state_saving.py

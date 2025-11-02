@@ -10,7 +10,7 @@ from datetime import datetime
 
 # ---------------- MongoDB Setup ----------------
 URL = "mongodb://localhost:27017"
-DB_NAME = "Trunco_data"
+DB_NAME = "Tranco_data"
 client = MongoClient(URL, serverSelectionTimeoutMS=5000)
 db = client[DB_NAME]
 collection = db["certificates"]
