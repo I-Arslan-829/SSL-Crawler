@@ -1,0 +1,30 @@
+# Python / Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+venv/
+env/
+
+#just made for experiment
+requirements2.txt       
+
+
+# Django specific
+media/
+staticfiles/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+frontend/.env
+frontend/.vercel
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
