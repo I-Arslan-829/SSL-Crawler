@@ -242,6 +242,7 @@ def main():
     # Build list to run
     remaining_domains = [d for d in all_domains if d not in processed_domains and d not in failed_domains]
     total_domains = len(remaining_domains)
+    
     print(f"Domains remaining to process: {total_domains}")
 
     if total_domains == 0:
